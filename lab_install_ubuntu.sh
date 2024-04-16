@@ -38,4 +38,9 @@ cd jetbrains-toolbox-2.3.0.30876
 ./jetbrains-toolbox
 cd ..
 
+#Burpsuite
+wget https://portswigger.net/burp/releases/community/latest
+
+
 #packet tracer, chrome, burpsuite
+
