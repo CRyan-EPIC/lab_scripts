@@ -9,7 +9,7 @@ sudo apt -o Apt::Get::Assume-Yes=true install snapd openssh openvpn blender krit
   chromium-browser virtualbox* gcc top htop docker.io vim neovim nano \
   gns3-* gcc g++ make lolcat fortune gparted filezilla obs-studio \
   fish zsh xrdp remmina make flatpak wireshark* timeshift traceroute python3 \
-  nmap zip gzip bzip2 wget curl unzip ufw tree tigervnc-viewer -y
+  nmap zip gzip bzip2 wget curl unzip ufw tree tigervnc-viewer minicom git -y
 
 #flatpak update
 sudo add-apt-repository ppa:flatpak/stable
@@ -42,6 +42,14 @@ cd ..
 wget https://portswigger.net/burp/releases/community/latest
 chmod 700 ./burpsuite_community_linux_v2024_2_1_5.sh
 ./burpsuite_community_linux_v2024_2_1_5.sh
+
+#UEFI Dual Boot Screen
+git clone https://github.com/vinceliuice/grub2-themes.git
+cd grub2-themes
+sudo ./install.sh -b -t stylish
+cd ..
+
+#Edit sudo to use apt, apt-get, gparted, openvpn, nmap, adduser 
 
 #packet tracer, chrome, burpsuite
 
