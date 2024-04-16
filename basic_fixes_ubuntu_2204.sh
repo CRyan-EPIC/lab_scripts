@@ -3,7 +3,7 @@
 sudo apt update
 
 #reinstall the kernel
-sudo apt install --reinstall linux-image-`uname -r`
+sudo apt install --reinstall linux-image-generic
 
 #reinstall the ubuntu drivers
 sudo ubuntu-drivers install
