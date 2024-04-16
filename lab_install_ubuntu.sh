@@ -8,8 +8,8 @@ sudo apt update
 sudo apt -o Apt::Get::Assume-Yes=true install snapd openssh openvpn blender krita godot3 gimp \
   chromium-browser virtualbox* gcc top htop docker.io vim neovim nano \
   gns3-* gcc g++ make lolcat fortune gparted filezilla obs-studio \
-  fish zsh xrdp remmina make flatpak wireshark timeshift traceroute python3 \
-  nmap -y
+  fish zsh xrdp remmina make flatpak wireshark* timeshift traceroute python3 \
+  nmap zip gzip bzip2 wget curl unzip ufw -y
 
 #flatpak update
 sudo add-apt-repository ppa:flatpak/stable
