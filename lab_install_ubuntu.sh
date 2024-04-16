@@ -40,7 +40,8 @@ cd ..
 
 #Burpsuite
 wget https://portswigger.net/burp/releases/community/latest
-
+chmod 700 ./burpsuite_community_linux_v2024_2_1_5.sh
+./burpsuite_community_linux_v2024_2_1_5.sh
 
 #packet tracer, chrome, burpsuite
 
