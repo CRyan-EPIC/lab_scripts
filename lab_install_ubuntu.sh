@@ -18,11 +18,7 @@ flatpak remote-add --if-not-exists flathub https://dl.flathub.org/repo/flathub.f
 #install Fedora media writer
 flatpak install flathub org.fedoraproject.MediaWriter
 
-#chrome
-############################################################################
-
 #raspi imager, packet tracer, chrome, pycharm, burpsuite, intellij
-
 
 #Microsoft fonts
 sudo apt install ttf-mscorefonts-installer; sudo fc-cache -f -v
