@@ -49,7 +49,7 @@ cd grub2-themes
 sudo ./install.sh -b -t stylish
 cd ..
 
-#Edit sudo to use apt, apt-get, gparted, openvpn, nmap, adduser, wireguard, wg-quick 
+#Edit sudo to use apt, apt-get, gparted, openvpn, nmap, adduser, wireguard, wg-quick, docker 
 
 #packet tracer, chrome, burpsuite
 
