@@ -5,4 +5,4 @@ Auto shutdown script
 C:\Windows\System32\shutdown.exe /l /f /t 0
 ```
 
-- [] Add the following programs
+- [ ] Add the following programs
