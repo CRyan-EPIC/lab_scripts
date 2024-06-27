@@ -15,4 +15,5 @@
     - Under gpedit.msc, User Configuration\Administrative Templates\Windows Components\Windows CoPilot\Turn off Windows CoPilot
 - [ ] Enable Interactive logon: Don't display last signed-in, go to gpedit.msc
     - Computer Configuration\Windows Settings\Security Settings\Local Policies\Security Options\Interactive logon
-- [ ] Add the following programs
+- [ ] Add the following programs to execute without admin credentials using [Nirsoft AppCompatibiltyView tool]([url](https://www.nirsoft.net/articles/run_application_without_elevation.html))
+    - Raspi Imager, Balena Etcher, Disk part, Rufus
