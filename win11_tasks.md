@@ -1,5 +1,6 @@
-### Windows 11 Image Prep
+### Windows 11 Image Prep for Windows 11 Education
 
+- [ ] Add GCPW
 - [ ] Add ISO files and tools to the Public Desktop
     - Useful NTFS link - https://learn.microsoft.com/en-us/answers/questions/67227/ntfs-permission
 - [ ] Auto shutdown script
