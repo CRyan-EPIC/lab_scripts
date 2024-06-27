@@ -11,5 +11,6 @@ C:\Windows\System32\shutdown.exe /l /f /t 0
     - Navigate to User Configuration > Administrative Templates > Windows Components > Windows CoPilot.
     - Double-click Turn off Windows CoPilot.
     - Click Enabled, then Apply, and OK.
-- [ ] Disable Last Person Logon Memory
+- [ ] Enable Interactive logon: Don't display last signed-in
+    - Computer Configuration\Windows Settings\Security Settings\Local Policies\Security Options\Interactive logon
 - [ ] Add the following programs
