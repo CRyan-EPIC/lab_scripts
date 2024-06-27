@@ -7,10 +7,7 @@
 C:\Windows\System32\shutdown.exe /l /f /t 0
 ```
 - [ ] Turn off Cortana
-    - Click Start and search for "gpedit" to open the Group Policy Editor.
-    - Navigate to User Configuration > Administrative Templates > Windows Components > Windows CoPilot.
-    - Double-click Turn off Windows CoPilot.
-    - Click Enabled, then Apply, and OK.
-- [ ] Enable Interactive logon: Don't display last signed-in
+    - Under gpedit.msc, User Configuration\Administrative Templates\Windows Components\Windows CoPilot\Turn off Windows CoPilot
+- [ ] Enable Interactive logon: Don't display last signed-in, go to gpedit.msc
     - Computer Configuration\Windows Settings\Security Settings\Local Policies\Security Options\Interactive logon
 - [ ] Add the following programs
