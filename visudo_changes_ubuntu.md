@@ -23,5 +23,6 @@ ALL ALL=(ALL) NOPASSWD: /usr/bin/rpi-imager #rapsberry pi imager
 ALL ALL=(ALL) NOPASSWD: /usr/bin/minicom    #minicom
 ALL ALL=(ALL) NOPASSWD: /usr/bin/minicom    #minicom
 ALL ALL=(ALL) NOPASSWD: /usr/sbin/ip        #ip a
+ALL ALL=(ALL) NOPASSWD: /usr/bin/systemctl  #systemctl
 
 #### Save and exit
