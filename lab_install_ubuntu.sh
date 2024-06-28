@@ -5,12 +5,20 @@ export APT_CONFIG=/tmp/_tmp_apt.conf
 
 #install these programs
 sudo apt update
-sudo apt -o Apt::Get::Assume-Yes=true install snapd openssh openvpn blender krita godot3 gimp \
-  chromium-browser virtualbox* gcc top htop docker.io vim neovim nano \
-  gns3-* gcc g++ make lolcat fortune gparted filezilla obs-studio \
+sudo apt -o Apt::Get::Assume-Yes=true install snapd openssh-server openvpn blender krita godot3 gimp \
+  chromium-browser virtualbox* gcc htop docker.io vim neovim nano \
+  gcc g++ make lolcat fortune gparted filezilla obs-studio \
   fish zsh xrdp remmina make flatpak wireshark* timeshift traceroute python3 \
   nmap zip gzip bzip2 wget curl unzip ufw tree tigervnc-viewer minicom git neofetch \
   git rpi-imager cpufetch isc-dhcp-client wget curl -y
+
+#GNS3
+sudo add-apt-repository ppa:gns3/ppa
+sudo apt update                                
+sudo apt install gns3-gui gns3-server -y
+sudo dpkg --add-architecture i386
+sudo apt update
+sudo apt install gns3-iou -y
 
 #flatpak update
 sudo add-apt-repository ppa:flatpak/stable
