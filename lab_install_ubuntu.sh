@@ -10,7 +10,7 @@ sudo apt -o Apt::Get::Assume-Yes=true install snapd openssh openvpn blender krit
   gns3-* gcc g++ make lolcat fortune gparted filezilla obs-studio \
   fish zsh xrdp remmina make flatpak wireshark* timeshift traceroute python3 \
   nmap zip gzip bzip2 wget curl unzip ufw tree tigervnc-viewer minicom git neofetch \
-  git rpi-imager cpufetch -y
+  git rpi-imager cpufetch isc-dhcp-client -y
 
 #flatpak update
 sudo add-apt-repository ppa:flatpak/stable
@@ -55,7 +55,7 @@ wget https://dl-ssl.google.com/linux/linux_signing_key.pub -O /tmp/google.pub
 gpg --no-default-keyring --keyring /etc/apt/keyrings/google-chrome.gpg --import /tmp/google.pub
 echo 'deb [arch=amd64 signed-by=/etc/apt/keyrings/google-chrome.gpg] http://dl.google.com/linux/chrome/deb/ stable main' | sudo tee /etc/apt/sources.list.d/google-chrome.list
 sudo apt-get update 
-sudo apt-get install google-chrome-stable
+sudo apt-get install google-chrome-stable -y
 
 #packet tracer
 #must be done manually
