@@ -1,7 +1,4 @@
 #!/bin/bash
-#auto yes on apt
-echo "APT::Get::Assume-Yes=yes" > /tmp/_tmp_apt.conf
-export APT_CONFIG=/tmp/_tmp_apt.conf
 
 #install these programs
 sudo apt update
@@ -15,10 +12,10 @@ sudo apt -o Apt::Get::Assume-Yes=true install snapd openssh-server openvpn blend
 #GNS3
 sudo add-apt-repository ppa:gns3/ppa
 sudo apt update                                
-sudo apt install gns3-gui gns3-server -y
+sudo apt -o Apt::Get::Assume-Yes=true install gns3-gui gns3-server -y
 sudo dpkg --add-architecture i386
 sudo apt update
-sudo apt install gns3-iou -y
+sudo apt -o Apt::Get::Assume-Yes=true install gns3-iou -y
 
 #flatpak update
 sudo add-apt-repository ppa:flatpak/stable
@@ -31,7 +28,7 @@ flatpak remote-add --if-not-exists flathub https://dl.flathub.org/repo/flathub.f
 flatpak install flathub org.fedoraproject.MediaWriter -y
 
 #Microsoft fonts
-sudo apt install ttf-mscorefonts-installer; sudo fc-cache -f -v
+sudo apt -o Apt::Get::Assume-Yes=true install ttf-mscorefonts-installer; sudo fc-cache -f -v
 
 #install these snaps
 sudo snap install code --classic   #vscode
