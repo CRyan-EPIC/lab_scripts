@@ -50,28 +50,13 @@ chmod 700 ./burpsuite_community_linux_v2024_2_1_5.sh
 #sudo ./install.sh -b -t stylish
 #cd ..
 
-#Edit sudo to use apt, apt-get, gparted, openvpn, nmap, adduser, wireguard, wg-quick, docker, ufw
-#Add these to visudo
-sudo visudo
-ALL ALL=(ALL) NOPASSWD: /usr/bin/apt        #apt
-ALL ALL=(ALL) NOPASSWD: /usr/bin/apt-get    #apt-get
-ALL ALL=(ALL) NOPASSWD: /usr/bin/dpkg       #dpkg
-ALL ALL=(ALL) NOPASSWD: /usr/bin/pip        #pip
-ALL ALL=(ALL) NOPASSWD: /usr/bin/pip3       #pip3
-ALL ALL=(ALL) NOPASSWD: /usr/sbin/iptables  #iptables
-ALL ALL=(ALL) NOPASSWD: /usr/sbin/openvpn   #openvpn
-ALL ALL=(ALL) NOPASSWD: /usr/sbin/adduser   #adduser
-ALL ALL=(ALL) NOPASSWD: /usr/bin/nmap       #nmap
-ALL ALL=(ALL) NOPASSWD: /usr/sbin/gparted   #gparted
-ALL ALL=(ALL) NOPASSWD: /usr/bin/docker     #docker
-ALL ALL=(ALL) NOPASSWD: /usr/sbin/ufw       #ufw
-ALL ALL=(ALL) NOPASSWD: /usr/bin/wg-quick   #wireguard
-ALL ALL=(ALL) NOPASSWD: /usr/bin/wireshark  #wireshark
-ALL ALL=(ALL) NOPASSWD: /usr/bin/flatpak    #flatpak
-ALL ALL=(ALL) NOPASSWD: /usr/bin/rpi-imager #rapsberry pi imager
-ALL ALL=(ALL) NOPASSWD: /usr/bin/minicom    #minicom
+#Chrome
+wget https://dl-ssl.google.com/linux/linux_signing_key.pub -O /tmp/google.pub
+gpg --no-default-keyring --keyring /etc/apt/keyrings/google-chrome.gpg --import /tmp/google.pub
+echo 'deb [arch=amd64 signed-by=/etc/apt/keyrings/google-chrome.gpg] http://dl.google.com/linux/chrome/deb/ stable main' | sudo tee /etc/apt/sources.list.d/google-chrome.list
+sudo apt-get update 
+sudo apt-get install google-chrome-stable
 
-pip, gparted, openvpn, nmap, adduser, wireguard, wg-quick, docker, ufw
-
-#packet tracer, chrome, burpsuite
+#packet tracer
+#must be done manually
 
