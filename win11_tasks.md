@@ -18,6 +18,10 @@
 - [ ] Install VirtualBox as an admin. Otherwise, it can't see the folders outside of the user account.
 - [ ] Turn off Widgets on the taskbar. Go to gpedit.msc
     - Computer Configuration\Administrative Template\Windows Components\Widgets
+- [ ] Allow non-admin users access to ncpa.cpl (changing their IP address)
+    - Go to compmgmt.msc
+    - SystemTools\Local Users and Groups\Groups\Network Configuration Operators
+    - Add "Everyone" to it
 
 ### Optional
 - [ ] Enable Interactive logon: Don't display last signed-in, go to gpedit.msc
