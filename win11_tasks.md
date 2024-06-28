@@ -14,10 +14,13 @@
     - Conditions tab -- uncheck Start the task only if the computer is on AC power && even when your use is not logged on.
 - [ ] Turn off Cortana
     - Under gpedit.msc, User Configuration\Administrative Templates\Windows Components\Windows CoPilot\Turn off Windows CoPilot
-- [ ] Add the following programs to execute without admin credentials using [Nirsoft AppCompatibiltyView tool](https://www.nirsoft.net/articles/run_application_without_elevation.html)
-    - Raspi Imager, Balena Etcher, Disk part, Rufus
+- [ ] [RunAsTool](https://www.sordum.org/8727/runastool-v1-5/) - Download it and create links in the Public Desktop
 - [ ] Install VirtualBox as an admin. Otherwise, it can't see the folders outside of the user account.
 
 ### Optional
 - [ ] Enable Interactive logon: Don't display last signed-in, go to gpedit.msc
     - Computer Configuration\Windows Settings\Security Settings\Local Policies\Security Options\Interactive logon
+
+### Did not work for all users
+-[ ] - [ ] Add the following programs to execute without admin credentials using [Nirsoft AppCompatibiltyView tool](https://www.nirsoft.net/articles/run_application_without_elevation.html)
+    - Raspi Imager, Balena Etcher, Disk part, Rufus
