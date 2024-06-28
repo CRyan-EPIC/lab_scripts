@@ -16,6 +16,8 @@
     - Under gpedit.msc, User Configuration\Administrative Templates\Windows Components\Windows CoPilot\Turn off Windows CoPilot
 - [ ] [RunAsTool](https://www.sordum.org/8727/runastool-v1-5/) - Download it and create links in the Public Desktop
 - [ ] Install VirtualBox as an admin. Otherwise, it can't see the folders outside of the user account.
+- [ ] Turn off Widgets on the taskbar. Go to gpedit.msc
+    - Computer Configuration\Administrative Template\Windows Components\Widgets
 
 ### Optional
 - [ ] Enable Interactive logon: Don't display last signed-in, go to gpedit.msc
