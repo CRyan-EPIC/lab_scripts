@@ -49,8 +49,8 @@ cd ..
 
 #Burpsuite
 wget https://portswigger.net/burp/releases/community/latest
-chmod 700 ./burpsuite_community_linux_v2024_2_1_5.sh
-./burpsuite_community_linux_v2024_2_1_5.sh
+chmod 700 ./burpsuite_community_linux_v*.sh
+./burpsuite_community_linux_v*.sh
 
 #UEFI Dual Boot Screen
 #git clone https://github.com/vinceliuice/grub2-themes.git
