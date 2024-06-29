@@ -30,5 +30,6 @@ ALL ALL=(ALL) NOPASSWD: /usr/bin/mount      #mount
 ALL ALL=(ALL) NOPASSWD: /usr/bin/umount     #umount
 ALL ALL=(ALL) NOPASSWD: /usr/bin/podman     #podman
 ALL ALL=(ALL) NOPASSWD: /usr/sbin/update-grub   #udate-grub
+ALL ALL=(ALL) NOPASSWD: /usr/sbin/service   #service
 
 #### Save and exit
