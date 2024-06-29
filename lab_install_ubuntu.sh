@@ -7,7 +7,7 @@ sudo apt -o Apt::Get::Assume-Yes=true install snapd openssh-server openvpn blend
   gcc g++ make lolcat fortune gparted filezilla obs-studio \
   fish zsh xrdp remmina make flatpak wireshark timeshift traceroute python3 \
   nmap zip gzip bzip2 wget curl unzip ufw tree tigervnc-viewer minicom git neofetch \
-  git rpi-imager cpufetch isc-dhcp-client wget curl exfatprogs -y
+  git rpi-imager cpufetch isc-dhcp-client wget curl exfatprogs podman -y
 
 #GNS3
 sudo add-apt-repository ppa:gns3/ppa
