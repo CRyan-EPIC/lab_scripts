@@ -30,6 +30,9 @@ flatpak install flathub org.fedoraproject.MediaWriter -y
 #Microsoft fonts
 sudo apt -o Apt::Get::Assume-Yes=true install ttf-mscorefonts-installer; sudo fc-cache -f -v
 
+#Fixing the unit file for apt-news
+sudo systemctl daemon-reload
+
 #install these snaps
 sudo snap install code --classic   #vscode
 sudo snap install obsidian --classic   #obsidian.md
