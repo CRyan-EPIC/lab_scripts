@@ -25,6 +25,9 @@ ALL ALL=(ALL) NOPASSWD: /usr/bin/minicom    #minicom
 ALL ALL=(ALL) NOPASSWD: /usr/sbin/ip        #ip a
 ALL ALL=(ALL) NOPASSWD: /usr/bin/systemctl  #systemctl
 ALL ALL=(ALL) NOPASSWD: /usr/sbin/dhclient  #dhclient
-ALL ALL=(ALL) NOPASSWD: /usr/bin/dd  #dd
+ALL ALL=(ALL) NOPASSWD: /usr/bin/dd         #dd
+ALL ALL=(ALL) NOPASSWD: /usr/bin/mount      #mount
+ALL ALL=(ALL) NOPASSWD: /usr/bin/umount     #umount
+ALL ALL=(ALL) NOPASSWD: /usr/bin/podman     #podman
 
 #### Save and exit
