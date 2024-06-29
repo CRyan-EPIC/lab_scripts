@@ -10,12 +10,12 @@ sudo apt -o Apt::Get::Assume-Yes=true install snapd openssh-server openvpn blend
   git rpi-imager cpufetch isc-dhcp-client wget curl exfatprogs podman -y
 
 #GNS3
-sudo add-apt-repository ppa:gns3/ppa
-sudo apt update                                
-sudo apt -o Apt::Get::Assume-Yes=true install gns3-gui gns3-server -y
-sudo dpkg --add-architecture i386
-sudo apt update
-sudo apt -o Apt::Get::Assume-Yes=true install gns3-iou -y
+#sudo add-apt-repository ppa:gns3/ppa
+#sudo apt update                                
+#sudo apt -o Apt::Get::Assume-Yes=true install gns3-gui gns3-server -y
+#sudo dpkg --add-architecture i386
+#sudo apt update
+#sudo apt -o Apt::Get::Assume-Yes=true install gns3-iou -y
 
 #flatpak update
 sudo add-apt-repository ppa:flatpak/stable
