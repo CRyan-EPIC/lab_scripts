@@ -7,7 +7,27 @@ sudo apt -o Apt::Get::Assume-Yes=true install snapd openssh-server openvpn blend
   gcc g++ make lolcat fortune gparted filezilla obs-studio \
   fish zsh xrdp remmina make flatpak wireshark timeshift traceroute python3 \
   nmap zip gzip bzip2 wget curl unzip ufw tree tigervnc-viewer minicom git neofetch \
-  git rpi-imager cpufetch isc-dhcp-client wget curl exfatprogs podman -y
+  git rpi-imager cpufetch isc-dhcp-client wget curl exfatprogs podman flatpak -y
+
+#Block Steam
+sudo bash -c 'cat <<EOF > /etc/apt/preferences.d/steam.pref
+Package: steam
+Pin: release *
+Pin-Priority: -1
+EOF'
+
+sudo bash -c 'cat <<EOF > /etc/apt/preferences.d/steam-installer.pref
+Package: steam-installer
+Pin: release *
+Pin-Priority: -1
+EOF'
+
+sudo bash -c 'cat <<EOF > /etc/apt/preferences.d/steam-devices.pref
+Package: steam-devices
+Pin: release *
+Pin-Priority: -1
+EOF'
+
 
 #GNS3
 #sudo add-apt-repository ppa:gns3/ppa
@@ -16,13 +36,6 @@ sudo apt -o Apt::Get::Assume-Yes=true install snapd openssh-server openvpn blend
 #sudo dpkg --add-architecture i386
 #sudo apt update
 #sudo apt -o Apt::Get::Assume-Yes=true install gns3-iou -y
-
-#flatpak update
-sudo add-apt-repository ppa:flatpak/stable
-sudo apt update
-sudo apt -o Apt::Get::Assume-Yes=true install flatpak
-sudo apt -o Apt::Get::Assume-Yes=true install gnome-software-plugin-flatpak
-flatpak remote-add --if-not-exists flathub https://dl.flathub.org/repo/flathub.flatpakrepo
 
 #install Fedora media writer
 flatpak install flathub org.fedoraproject.MediaWriter -y
