@@ -28,6 +28,8 @@ Pin: release *
 Pin-Priority: -1
 EOF'
 
+#Flatpak
+flatpak install flathub uk.org.greenend.chiark.sgtatham.putty
 
 #GNS3
 #sudo add-apt-repository ppa:gns3/ppa
