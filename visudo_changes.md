@@ -1,5 +1,4 @@
-#Edit sudo to use apt, apt-get, gparted, openvpn, nmap, adduser, wireguard, wg-quick, docker, ufw
-
+## Ubuntu 24.04
 #### Open visudo
 sudo visudo
 
@@ -34,6 +33,9 @@ ALL ALL=(ALL) NOPASSWD: /usr/sbin/service   #service
 
 #### Save and exit
 
+## Fedora 40
+#### Open visudo
+sudo visudo
 
 ### For Fedora
 ALL ALL=(ALL) NOPASSWD: /usr/bin/dnf        #dnf
