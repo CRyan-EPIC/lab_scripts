@@ -52,6 +52,8 @@ winget install --id=CPUID.CPU-Z  -e                            ::CPUID
 winget install --id=Bitwarden.Bitwarden  -e                    ::Bitwarden
 winget install --id=PrimateLabs.Geekbench.6  -e                ::Geekbench
 winget install --id=Piriform.CCleaner  -e                      ::CCleaner
+winget install --id=Microsoft.Sysinternals.Autoruns  -e        ::Autoruns
+winget install --id=Microsoft.Sysinternals.ProcessExplorer  -e ::Process Explorer
 
 ::Art
 winget install --id=KDE.Krita  -e                              ::Krita
