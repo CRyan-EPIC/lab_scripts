@@ -2,6 +2,7 @@
 #### Open visudo -> ```sudo visudo```
 
 #### Add these to visudo
+```bash
 ALL ALL=(ALL) NOPASSWD: /usr/bin/apt        #apt
 ALL ALL=(ALL) NOPASSWD: /usr/bin/apt-get    #apt-get
 ALL ALL=(ALL) NOPASSWD: /usr/bin/dpkg       #dpkg
@@ -29,11 +30,13 @@ ALL ALL=(ALL) NOPASSWD: /usr/bin/umount     #umount
 ALL ALL=(ALL) NOPASSWD: /usr/bin/podman     #podman
 ALL ALL=(ALL) NOPASSWD: /usr/sbin/update-grub   #udate-grub
 ALL ALL=(ALL) NOPASSWD: /usr/sbin/service   #service
+```
 
 ## Fedora 40
 #### Open visudo -> ```sudo visudo```
 
 ### For Fedora
+```bash
 ALL ALL=(ALL) NOPASSWD: /usr/bin/dnf        #dnf
 ALL ALL=(ALL) NOPASSWD: /usr/bin/yum        #yum
 ALL ALL=(ALL) NOPASSWD: /usr/bin/rpm        #rpm
@@ -61,3 +64,4 @@ ALL ALL=(ALL) NOPASSWD: /usr/bin/umount     #umount
 ALL ALL=(ALL) NOPASSWD: /usr/bin/podman     #podman
 ALL ALL=(ALL) NOPASSWD: /usr/sbin/update-grub   #udate-grub
 ALL ALL=(ALL) NOPASSWD: /usr/sbin/service   #service
+```
