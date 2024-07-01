@@ -24,31 +24,49 @@
     - Add "Everyone" to it
 - [ ] Programs to install [winstall website](https://winstall.app/apps)
 ```cmd
-winget install --id=Spotify.Spotify  -e                        ::Spotify
-winget install --id=YoYoGames.GameMaker.Studio.2  -e           ::GameMaker Studio 2
+::Imaging
+winget install --id=Balena.Etcher  -e                          ::Balena Etcher
+winget install --id=Rufus.Rufus  -e                            ::Rufus
+
+::IDE and Software Development Tools
+winget install --id=JetBrains.IntelliJIDEA.Community.EAP  -e   ::IntelliJ CE
+winget install --id=JetBrains.Toolbox  -e                      ::Jetbrains Toolbox
+winget install --id=Microsoft.VisualStudioCode  -e             ::VSCode
+winget install --id=Git.Git  -e                                ::Git
+
+::Browsers
+winget install --id=Google.Chrome.EXE  -e                      ::Google Chrome
+winget install --id=Mozilla.Firefox  -e                        ::Firefox
+winget install --id=Opera.OperaGX  -e                          ::Opera GX
+
+::Power User Tools
 winget install --id=PuTTY.PuTTY  -e                            ::Putty
-winget install --id=OBSProject.OBSStudio  -e                   ::OBS Studio
-winget install --id=GIMP.GIMP  -e                              ::GIMP
 winget install --id=Microsoft.WindowsTerminal  -e              ::Windows Terminal
+winget install --id=CPUID.CPU-Z  -e                            ::CPUID
+winget install --id=Bitwarden.Bitwarden  -e                    ::Bitwarden
+winget install --id=PrimateLabs.Geekbench.6  -e                ::Geekbench
+winget install --id=Piriform.CCleaner  -e                      ::CCleaner
+
+::Art
+winget install --id=KDE.Krita  -e                              ::Krita
+winget install --id=GIMP.GIMP  -e                              ::GIMP
+
+::Productivity
+winget install --id=7zip.7zip  -e                              ::7zip
+winget install --id=Adobe.Acrobat.Reader.64-bit  -e            ::Adobe PDF Reader
+winget install --id=VideoLAN.VLC  -e                           ::VLC
+winget install --id=OBSProject.OBSStudio  -e                   ::OBS Studio
+
+::Virtualization
+winget install --id=Oracle.VirtualBox  -e                      ::VirtualBox
 winget install --id=Docker.DockerCLI  -e                       ::DockerCLI
 winget install --id=Docker.DockerDesktop  -e                   ::Docker Desktop
 winget install --id=Docker.DockerCompose  -e                   ::Docker Compose
 winget install --id=RedHat.Podman  -e                          ::Podman
-winget install --id=Balena.Etcher  -e                          ::Balena Etcher
-winget install --id=JetBrains.IntelliJIDEA.Community.EAP  -e   ::IntelliJ CE
-winget install --id=KDE.Krita  -e                              ::Krita
-winget install --id=Piriform.CCleaner  -e                      ::CCleaner
-winget install --id=Mozilla.Firefox  -e                        ::Firefox
-winget install --id=Rufus.Rufus  -e                            ::Rufus
-winget install --id=7zip.7zip  -e                              ::7zip
-winget install --id=Adobe.Acrobat.Reader.64-bit  -e            ::Adobe PDF Reader
-winget install --id=VideoLAN.VLC  -e                           ::VLC
-winget install --id=Microsoft.VisualStudioCode  -e             ::VSCode
-winget install --id=CPUID.CPU-Z  -e                            ::CPUID
-winget install --id=Git.Git  -e                                ::Git
-winget install --id=Bitwarden.Bitwarden  -e                    ::Bitwarden
-winget install --id=PrimateLabs.Geekbench.6  -e                ::Geekbench
-winget install --id=Oracle.VirtualBox  -e                      ::VirtualBox
+
+::Misc
+winget install --id=Spotify.Spotify  -e                        ::Spotify
+winget install --id=YoYoGames.GameMaker.Studio.2  -e           ::GameMaker Studio 2
 ```
 
 ### Optional
