@@ -25,6 +25,7 @@
 - [ ] Programs to install [winstall website](https://winstall.app/apps)
 ```cmd
 winget install --id=Spotify.Spotify  -e                        ::Spotify
+winget install --id=YoYoGames.GameMaker.Studio.2  -e           ::GameMaker Studio 2
 winget install --id=PuTTY.PuTTY  -e                            ::Putty
 winget install --id=OBSProject.OBSStudio  -e                   ::OBS Studio
 winget install --id=GIMP.GIMP  -e                              ::GIMP
