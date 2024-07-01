@@ -29,7 +29,7 @@ Pin-Priority: -1
 EOF'
 
 #Flatpak
-flatpak install flathub uk.org.greenend.chiark.sgtatham.putty
+#flatpak install flathub uk.org.greenend.chiark.sgtatham.putty
 
 #GNS3
 #sudo add-apt-repository ppa:gns3/ppa
@@ -54,6 +54,7 @@ sudo snap install obsidian --classic   #obsidian.md
 #sudo snap install rpi-imager  #raspberry pi imager
 sudo snap install pycharm-community --classic   #pycharm community edition
 sudo snap install intellij-idea-community --classic   #IntelliJ Community edition
+sudo snap install putty-gtk --edge
 
 #IntelliJ Toolbox
 wget https://download.jetbrains.com/toolbox/jetbrains-toolbox-2.3.0.30876.tar.gz
