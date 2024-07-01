@@ -31,8 +31,6 @@ ALL ALL=(ALL) NOPASSWD: /usr/bin/podman     #podman
 ALL ALL=(ALL) NOPASSWD: /usr/sbin/update-grub   #udate-grub
 ALL ALL=(ALL) NOPASSWD: /usr/sbin/service   #service
 
-#### Save and exit
-
 ## Fedora 40
 #### Open visudo
 sudo visudo
