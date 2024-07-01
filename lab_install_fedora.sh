@@ -2,7 +2,7 @@
 
 #install these programs
 sudo dnf install openssh-server openvpn blender krita godot3 gimp \
-  chromium-browser virtualbox gcc htop docker.io vim neovim nano \
+  chromium-browser virtualbox gcc htop vim neovim nano \
   gcc g++ make lolcat fortune gparted filezilla obs-studio \
   fish zsh xrdp remmina make flatpak wireshark timeshift traceroute python3 \
   nmap zip gzip bzip2 wget curl unzip ufw tree tigervnc-viewer minicom git neofetch \
@@ -32,3 +32,9 @@ sudo dnf localinstall google-chrome-stable_current_x86_64.rpm -y
 #Microsoft Fonts
 yum install curl cabextract xorg-x11-font-utils fontconfig
 rpm -i https://downloads.sourceforge.net/project/mscorefonts2/rpms/msttcore-fonts-installer-2.6-1.noarch.rpm
+
+#Docker
+sudo dnf -y install dnf-plugins-core
+sudo dnf config-manager --add-repo https://download.docker.com/linux/fedora/docker-ce.repo
+sudo dnf install docker-ce docker-ce-cli containerd.io docker-buildx-plugin docker-compose-plugin
+sudo systemctl start docker
