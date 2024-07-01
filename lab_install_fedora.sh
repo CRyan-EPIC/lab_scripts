@@ -44,6 +44,7 @@ sudo systemctl start docker
 #Block Steam
 sudo dnf install dnf-plugins-core
 sudo mkdir -p /etc/dnf/protected.d/
-sudo echo "[main]" >> /etc/dnf/protected.d/forbidden.conf
-sudo echo "exclude=steam" >> /etc/dnf/protected.d/forbidden.conf
-sudo echo "include=/etc/dnf/protected.d/*.conf" >> /etc/dnf/dnf.conf
+echo "[main]" | sudo tee /etc/dnf/protected.d/forbidden.conf
+echo "exclude=steam" | sudo tee -a /etc/dnf/protected.d/forbidden.conf
+echo "include=/etc/dnf/protected.d/*.conf" | sudo tee -a /etc/dnf/dnf.conf
+
