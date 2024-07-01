@@ -34,6 +34,11 @@ winget install --id=JetBrains.Toolbox  -e                      ::Jetbrains Toolb
 winget install --id=Microsoft.VisualStudioCode  -e             ::VSCode
 winget install --id=Git.Git  -e                                ::Git
 
+::Languages
+winget install --id=Python.Python.3.12  -e                     ::Python3.12
+winget install --id=Oracle.JDK.22  -e                          ::Java SE Development Kit 22
+winget install --id=Oracle.JavaRuntimeEnvironment  -e          ::Java Runtime Environment 8
+
 ::Browsers
 winget install --id=Google.Chrome.EXE  -e                      ::Google Chrome
 winget install --id=Mozilla.Firefox  -e                        ::Firefox
