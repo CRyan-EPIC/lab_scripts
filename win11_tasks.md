@@ -24,25 +24,30 @@
     - Add "Everyone" to it
 - [ ] Programs to install [winstall website](https://winstall.app/apps)
 ```cmd
-winget install --id=Spotify.Spotify  -e
-winget install --id=PuTTY.PuTTY  -e
-winget install --id=OBSProject.OBSStudio  -e
-winget install --id=GIMP.GIMP  -e
-winget install --id=Microsoft.WindowsTerminal  -e
-winget install --id=Docker.DockerCLI  -e
-winget install --id=Balena.Etcher  -e
-winget install --id=JetBrains.IntelliJIDEA.Community.EAP  -e
-winget install --id=KDE.Krita  -e
-winget install --id=Piriform.CCleaner  -e
-winget install --id=Mozilla.Firefox  -e
-winget install --id=Rufus.Rufus  -e
-winget install --id=7zip.7zip  -e
-winget install --id=Adobe.Acrobat.Reader.64-bit  -e
-winget install --id=VideoLAN.VLC  -e
-winget install --id=Microsoft.VisualStudioCode  -e
-winget install --id=CPUID.CPU-Z  -e
-winget install --id=Git.Git  -e
-winget install --id=Bitwarden.Bitwarden  -e
+winget install --id=Spotify.Spotify  -e                        ::Spotify
+winget install --id=PuTTY.PuTTY  -e                            ::Putty
+winget install --id=OBSProject.OBSStudio  -e                   ::OBS Studio
+winget install --id=GIMP.GIMP  -e                              ::GIMP
+winget install --id=Microsoft.WindowsTerminal  -e              ::Windows Terminal
+winget install --id=Docker.DockerCLI  -e                       ::DockerCLI
+winget install --id=Docker.DockerDesktop  -e                   ::Docker Desktop
+winget install --id=Docker.DockerCompose  -e                   ::Docker Compose
+winget install --id=RedHat.Podman  -e                          ::Podman
+winget install --id=Balena.Etcher  -e                          ::Balena Etcher
+winget install --id=JetBrains.IntelliJIDEA.Community.EAP  -e   ::IntelliJ CE
+winget install --id=KDE.Krita  -e                              ::Krita
+winget install --id=Piriform.CCleaner  -e                      ::CCleaner
+winget install --id=Mozilla.Firefox  -e                        ::Firefox
+winget install --id=Rufus.Rufus  -e                            ::Rufus
+winget install --id=7zip.7zip  -e                              ::7zip
+winget install --id=Adobe.Acrobat.Reader.64-bit  -e            ::Adobe PDF Reader
+winget install --id=VideoLAN.VLC  -e                           ::VLC
+winget install --id=Microsoft.VisualStudioCode  -e             :VSCode
+winget install --id=CPUID.CPU-Z  -e                            ::CPUID
+winget install --id=Git.Git  -e                                ::Git
+winget install --id=Bitwarden.Bitwarden  -e                    ::Bitwarden
+winget install --id=PrimateLabs.Geekbench.6  -e                ::Geekbench
+winget install --id=Oracle.VirtualBox  -e                      ::VirtualBox
 ```
 
 ### Optional
