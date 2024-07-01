@@ -22,11 +22,29 @@
     - Go to compmgmt.msc
     - SystemTools\Local Users and Groups\Groups\Network Configuration Operators
     - Add "Everyone" to it
+- [ ] Programs to install [winstall website](https://winstall.app/apps)
+```cmd
+winget install --id=Spotify.Spotify  -e
+winget install --id=PuTTY.PuTTY  -e
+winget install --id=OBSProject.OBSStudio  -e
+winget install --id=GIMP.GIMP  -e
+winget install --id=Microsoft.WindowsTerminal  -e
+winget install --id=Docker.DockerCLI  -e
+winget install --id=Balena.Etcher  -e
+winget install --id=JetBrains.IntelliJIDEA.Community.EAP  -e
+winget install --id=KDE.Krita  -e
+winget install --id=Piriform.CCleaner  -e
+winget install --id=Mozilla.Firefox  -e
+winget install --id=Rufus.Rufus  -e
+winget install --id=7zip.7zip  -e
+winget install --id=Adobe.Acrobat.Reader.64-bit  -e
+winget install --id=VideoLAN.VLC  -e
+winget install --id=Microsoft.VisualStudioCode  -e
+winget install --id=CPUID.CPU-Z  -e
+winget install --id=Git.Git  -e
+winget install --id=Bitwarden.Bitwarden  -e
+```
 
 ### Optional
 - [ ] Enable Interactive logon: Don't display last signed-in, go to gpedit.msc
     - Computer Configuration\Windows Settings\Security Settings\Local Policies\Security Options\Interactive logon
-
-### Did not work for all users
--[ ] - [ ] Add the following programs to execute without admin credentials using [Nirsoft AppCompatibiltyView tool](https://www.nirsoft.net/articles/run_application_without_elevation.html)
-    - Raspi Imager, Balena Etcher, Disk part, Rufus
