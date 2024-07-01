@@ -34,6 +34,10 @@ winget install --id=JetBrains.Toolbox  -e                      ::Jetbrains Toolb
 winget install --id=Microsoft.VisualStudioCode  -e             ::VSCode
 winget install --id=Git.Git  -e                                ::Git
 
+::Terminal
+winget install --id=Microsoft.WSL  -e                          ::WSL2
+winget install --id=Microsoft.WindowsTerminal  -e              ::Windows Terminal
+
 ::Languages
 winget install --id=Python.Python.3.12  -e                     ::Python3.12
 winget install --id=Oracle.JDK.22  -e                          ::Java SE Development Kit 22
@@ -47,13 +51,17 @@ winget install --id=Opera.OperaGX  -e                          ::Opera GX
 ::Power User Tools
 winget install --id=PuTTY.PuTTY  -e                            ::Putty
 winget install --id=WinSCP.WinSCP  -e                          ::WinSCP
-winget install --id=Microsoft.WindowsTerminal  -e              ::Windows Terminal
 winget install --id=CPUID.CPU-Z  -e                            ::CPUID
 winget install --id=Bitwarden.Bitwarden  -e                    ::Bitwarden
 winget install --id=PrimateLabs.Geekbench.6  -e                ::Geekbench
 winget install --id=Piriform.CCleaner  -e                      ::CCleaner
 winget install --id=Microsoft.Sysinternals.Autoruns  -e        ::Autoruns
 winget install --id=Microsoft.Sysinternals.ProcessExplorer  -e ::Process Explorer
+
+::Networking
+winget install --id=WiresharkFoundation.Wireshark  -e          ::Wireshark
+winget install --id=WireGuard.WireGuard  -e                    ::Wireguard
+winget install --id=OpenVPNTechnologies.OpenVPNConnect  -e     ::OpenVPN Connect
 
 ::Art
 winget install --id=KDE.Krita  -e                              ::Krita
@@ -65,6 +73,8 @@ winget install --id=7zip.7zip  -e                              ::7zip
 winget install --id=Adobe.Acrobat.Reader.64-bit  -e            ::Adobe PDF Reader
 winget install --id=VideoLAN.VLC  -e                           ::VLC
 winget install --id=OBSProject.OBSStudio  -e                   ::OBS Studio
+winget install --id=TheDocumentFoundation.LibreOffice  -e      ::Libre Office
+winget install --id=Obsidian.Obsidian  -e                      ::Obsidian
 
 ::Virtualization
 winget install --id=Oracle.VirtualBox  -e                      ::VirtualBox
