@@ -40,3 +40,10 @@ sudo dnf -y install dnf-plugins-core
 sudo dnf config-manager --add-repo https://download.docker.com/linux/fedora/docker-ce.repo
 sudo dnf install docker-ce docker-ce-cli containerd.io docker-buildx-plugin docker-compose-plugin
 sudo systemctl start docker
+
+#Block Steam
+sudo dnf install dnf-plugins-core
+sudo mkdir -p /etc/dnf/protected.d/
+sudo echo "[main]" >> /etc/dnf/protected.d/forbidden.conf
+sudo echo "exclude=steam" >> /etc/dnf/protected.d/forbidden.conf
+sudo echo "include=/etc/dnf/protected.d/*.conf" >> /etc/dnf/dnf.conf
