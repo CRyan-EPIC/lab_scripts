@@ -1,6 +1,5 @@
 ## Ubuntu 24.04
-#### Open visudo
-sudo visudo
+#### Open visudo -> ```sudo visudo```
 
 #### Add these to visudo
 ALL ALL=(ALL) NOPASSWD: /usr/bin/apt        #apt
@@ -32,8 +31,7 @@ ALL ALL=(ALL) NOPASSWD: /usr/sbin/update-grub   #udate-grub
 ALL ALL=(ALL) NOPASSWD: /usr/sbin/service   #service
 
 ## Fedora 40
-#### Open visudo
-sudo visudo
+#### Open visudo -> ```sudo visudo```
 
 ### For Fedora
 ALL ALL=(ALL) NOPASSWD: /usr/bin/dnf        #dnf
