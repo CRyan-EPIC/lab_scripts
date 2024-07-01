@@ -41,7 +41,7 @@ winget install --id=Opera.OperaGX  -e                          ::Opera GX
 
 ::Power User Tools
 winget install --id=PuTTY.PuTTY  -e                            ::Putty
-winget install --id=WinSCP.WinSCP  -e                          ::[WinSCP](https://winscp.net/eng/index.php?ref=winstall)
+winget install --id=WinSCP.WinSCP  -e                          ::WinSCP
 winget install --id=Microsoft.WindowsTerminal  -e              ::Windows Terminal
 winget install --id=CPUID.CPU-Z  -e                            ::CPUID
 winget install --id=Bitwarden.Bitwarden  -e                    ::Bitwarden
@@ -51,7 +51,7 @@ winget install --id=Piriform.CCleaner  -e                      ::CCleaner
 ::Art
 winget install --id=KDE.Krita  -e                              ::Krita
 winget install --id=GIMP.GIMP  -e                              ::GIMP
-winget install --id=Inkscape.Inkscape  -e                      ::[Inkscape](https://inkscape.org/?ref=winstall)
+winget install --id=Inkscape.Inkscape  -e                      ::Inkscape
 
 ::Productivity
 winget install --id=7zip.7zip  -e                              ::7zip
