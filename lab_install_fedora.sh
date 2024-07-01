@@ -17,6 +17,7 @@ flatpak install flathub md.obsidian.Obsidian
 flatpak install flathub com.jetbrains.PyCharm-Community
 flatpak install flathub com.jetbrains.IntelliJ-IDEA-Community
 flatpak install flathub com.spotify.Client
+flatpak install flathub org.raspberrypi.rpi-imager
 
 #IntelliJ Toolbox
 wget https://download.jetbrains.com/toolbox/jetbrains-toolbox-2.3.0.30876.tar.gz
