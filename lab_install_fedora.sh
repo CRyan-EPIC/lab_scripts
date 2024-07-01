@@ -19,7 +19,6 @@ flatpak install flathub com.jetbrains.IntelliJ-IDEA-Community
 flatpak install flathub com.spotify.Client
 flatpak install flathub org.raspberrypi.rpi-imager
 flatpak install flathub uk.org.greenend.chiark.sgtatham.putty
-flatpak run com.google.Chrome
 
 #IntelliJ Toolbox
 wget https://download.jetbrains.com/toolbox/jetbrains-toolbox-2.3.0.30876.tar.gz
@@ -29,8 +28,8 @@ cd jetbrains-toolbox-2.3.0.30876
 cd ..
 
 #Chrome
-#wget https://dl.google.com/linux/direct/google-chrome-stable_current_x86_64.rpm
-#sudo dnf localinstall google-chrome-stable_current_x86_64.rpm -y
+wget https://dl.google.com/linux/direct/google-chrome-stable_current_x86_64.rpm
+sudo dnf localinstall google-chrome-stable_current_x86_64.rpm -y
 
 #Microsoft Fonts
 yum install curl cabextract xorg-x11-font-utils fontconfig
