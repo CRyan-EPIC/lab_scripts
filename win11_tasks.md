@@ -25,67 +25,67 @@
 - [ ] Programs to install [winstall website](https://winstall.app/apps)
 ```cmd
 ::Imaging
-winget install --id=Balena.Etcher  -e                          ::Balena Etcher
-winget install --id=Rufus.Rufus  -e                            ::Rufus
+winget install --id=Balena.Etcher  -e
+winget install --id=Rufus.Rufus  -e
 
 ::IDE and Software Development Tools
-winget install --id=JetBrains.IntelliJIDEA.Community.EAP  -e   ::IntelliJ CE
-winget install --id=JetBrains.Toolbox  -e                      ::Jetbrains Toolbox
-winget install --id=Microsoft.VisualStudioCode  -e             ::VSCode
-winget install --id=Git.Git  -e                                ::Git
+winget install --id=JetBrains.IntelliJIDEA.Community.EAP  -e
+winget install --id=JetBrains.Toolbox  -e
+winget install --id=Microsoft.VisualStudioCode  -e
+winget install --id=Git.Git  -e
 
 ::Terminal
-winget install --id=Microsoft.WSL  -e                          ::WSL2
-winget install --id=Microsoft.WindowsTerminal  -e              ::Windows Terminal
+winget install --id=Microsoft.WSL  -e
+winget install --id=Microsoft.WindowsTerminal  -e
 
 ::Languages
-winget install --id=Python.Python.3.12  -e                     ::Python3.12
-winget install --id=Oracle.JDK.22  -e                          ::Java SE Development Kit 22
-winget install --id=Oracle.JavaRuntimeEnvironment  -e          ::Java Runtime Environment 8
+winget install --id=Python.Python.3.12  -e
+winget install --id=Oracle.JDK.22  -e
+winget install --id=Oracle.JavaRuntimeEnvironment  -e
 
 ::Browsers
-winget install --id=Google.Chrome.EXE  -e                      ::Google Chrome
-winget install --id=Mozilla.Firefox  -e                        ::Firefox
-winget install --id=Opera.OperaGX  -e                          ::Opera GX
+winget install --id=Google.Chrome.EXE  -e
+winget install --id=Mozilla.Firefox  -e 
+winget install --id=Opera.OperaGX  -e
 
 ::Power User Tools
-winget install --id=PuTTY.PuTTY  -e                            ::Putty
-winget install --id=WinSCP.WinSCP  -e                          ::WinSCP
-winget install --id=CPUID.CPU-Z  -e                            ::CPUID
-winget install --id=Bitwarden.Bitwarden  -e                    ::Bitwarden
-winget install --id=PrimateLabs.Geekbench.6  -e                ::Geekbench
-winget install --id=Piriform.CCleaner  -e                      ::CCleaner
-winget install --id=Microsoft.Sysinternals.Autoruns  -e        ::Autoruns
-winget install --id=Microsoft.Sysinternals.ProcessExplorer  -e ::Process Explorer
+winget install --id=PuTTY.PuTTY  -e
+winget install --id=WinSCP.WinSCP  -e
+winget install --id=CPUID.CPU-Z  -e
+winget install --id=Bitwarden.Bitwarden  -e
+winget install --id=PrimateLabs.Geekbench.6  -e 
+winget install --id=Piriform.CCleaner  -e
+winget install --id=Microsoft.Sysinternals.Autoruns  -e
+winget install --id=Microsoft.Sysinternals.ProcessExplorer  -e
 
 ::Networking
-winget install --id=WiresharkFoundation.Wireshark  -e          ::Wireshark
-winget install --id=WireGuard.WireGuard  -e                    ::Wireguard
-winget install --id=OpenVPNTechnologies.OpenVPNConnect  -e     ::OpenVPN Connect
+winget install --id=WiresharkFoundation.Wireshark  -e
+winget install --id=WireGuard.WireGuard  -e
+winget install --id=OpenVPNTechnologies.OpenVPNConnect  -e
 
 ::Art
-winget install --id=KDE.Krita  -e                              ::Krita
-winget install --id=GIMP.GIMP  -e                              ::GIMP
-winget install --id=Inkscape.Inkscape  -e                      ::Inkscape
+winget install --id=KDE.Krita  -e
+winget install --id=GIMP.GIMP  -e
+winget install --id=Inkscape.Inkscape  -e
 
 ::Productivity
-winget install --id=7zip.7zip  -e                              ::7zip
-winget install --id=Adobe.Acrobat.Reader.64-bit  -e            ::Adobe PDF Reader
-winget install --id=VideoLAN.VLC  -e                           ::VLC
-winget install --id=OBSProject.OBSStudio  -e                   ::OBS Studio
-winget install --id=TheDocumentFoundation.LibreOffice  -e      ::Libre Office
-winget install --id=Obsidian.Obsidian  -e                      ::Obsidian
+winget install --id=7zip.7zip  -e
+winget install --id=Adobe.Acrobat.Reader.64-bit  -e
+winget install --id=VideoLAN.VLC  -e
+winget install --id=OBSProject.OBSStudio  -e
+winget install --id=TheDocumentFoundation.LibreOffice  -e
+winget install --id=Obsidian.Obsidian  -e
 
 ::Virtualization
-winget install --id=Oracle.VirtualBox  -e                      ::VirtualBox
-winget install --id=Docker.DockerCLI  -e                       ::DockerCLI
-winget install --id=Docker.DockerDesktop  -e                   ::Docker Desktop
-winget install --id=Docker.DockerCompose  -e                   ::Docker Compose
-winget install --id=RedHat.Podman  -e                          ::Podman
+winget install --id=Oracle.VirtualBox  -e
+winget install --id=Docker.DockerCLI  -e
+winget install --id=Docker.DockerDesktop  -e
+winget install --id=Docker.DockerCompose  -e
+winget install --id=RedHat.Podman  -e
 
 ::Misc
-winget install --id=Spotify.Spotify  -e                        ::Spotify
-winget install --id=YoYoGames.GameMaker.Studio.2  -e           ::GameMaker Studio 2
+winget install --id=Spotify.Spotify  -e
+winget install --id=YoYoGames.GameMaker.Studio.2  -e
 ```
 
 ### Optional
