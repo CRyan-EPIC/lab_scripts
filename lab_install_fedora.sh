@@ -1,5 +1,8 @@
 #!/bin/bash
 
+#if dual-booting with Windows, this will allow the times to syncronize
+timedatectl set-local-rtc 1
+
 #install these programs
 sudo dnf -y install openssh-server openvpn blender krita godot3 gimp \
   chromium gcc htop vim neovim nano \
