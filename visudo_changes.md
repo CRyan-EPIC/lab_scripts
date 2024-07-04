@@ -34,7 +34,6 @@ ALL ALL=(ALL) NOPASSWD: /usr/sbin/service       #service
 ## Fedora 40
 #### Open visudo -> ```sudo visudo```
 
-### For Fedora
 ```bash
 ALL ALL=(ALL) NOPASSWD: /usr/bin/dnf            #dnf
 ALL ALL=(ALL) NOPASSWD: /usr/bin/yum            #yum
