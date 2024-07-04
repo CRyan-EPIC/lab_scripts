@@ -13,13 +13,13 @@ sudo dnf install openssh-server openvpn blender krita godot3 gimp \
 #sudo ln -s /var/lib/snapd/snap /snap
 
 #install these flatpak images
-flatpak install flathub com.visualstudio.code
-flatpak install flathub md.obsidian.Obsidian
-flatpak install flathub com.jetbrains.PyCharm-Community
-flatpak install flathub com.jetbrains.IntelliJ-IDEA-Community
-flatpak install flathub com.spotify.Client
-flatpak install flathub org.raspberrypi.rpi-imager
-flatpak install flathub uk.org.greenend.chiark.sgtatham.putty
+flatpak install -y flathub com.visualstudio.code
+flatpak install -y flathub md.obsidian.Obsidian
+flatpak install -y flathub com.jetbrains.PyCharm-Community
+flatpak install -y flathub com.jetbrains.IntelliJ-IDEA-Community
+flatpak install -y flathub com.spotify.Client
+flatpak install -y flathub org.raspberrypi.rpi-imager
+flatpak install -y flathub uk.org.greenend.chiark.sgtatham.putty
 
 #IntelliJ Toolbox
 wget https://download.jetbrains.com/toolbox/jetbrains-toolbox-2.3.0.30876.tar.gz
