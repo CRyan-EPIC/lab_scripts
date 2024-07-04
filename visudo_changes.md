@@ -20,7 +20,6 @@ ALL ALL=(ALL) NOPASSWD: /usr/bin/wireshark  #wireshark
 ALL ALL=(ALL) NOPASSWD: /usr/bin/flatpak    #flatpak
 ALL ALL=(ALL) NOPASSWD: /usr/bin/rpi-imager #rapsberry pi imager
 ALL ALL=(ALL) NOPASSWD: /usr/bin/minicom    #minicom
-ALL ALL=(ALL) NOPASSWD: /usr/bin/minicom    #minicom
 ALL ALL=(ALL) NOPASSWD: /usr/sbin/ip        #ip a
 ALL ALL=(ALL) NOPASSWD: /usr/bin/systemctl  #systemctl
 ALL ALL=(ALL) NOPASSWD: /usr/sbin/dhclient  #dhclient
