@@ -1,25 +1,25 @@
 #!/bin/bash
 
 #install these programs
-sudo dnf install openssh-server openvpn blender krita godot3 gimp \
+sudo dnf -y install openssh-server openvpn blender krita godot3 gimp \
   chromium virtualbox gcc htop vim neovim nano \
   gcc g++ make lolcat fortune gparted filezilla obs-studio \
   fish zsh xrdp remmina make flatpak wireshark timeshift traceroute python3 \
   nmap zip gzip bzip2 wget curl unzip ufw tree minicom git neofetch \
-  git cpufetch isc-dhcp-client wget curl exfatprogs podman flatpak pip -y
+  git cpufetch isc-dhcp-client wget curl exfatprogs podman flatpak pip
 
 #snap for Fedora
 #sudo dnf install snapd -y
 #sudo ln -s /var/lib/snapd/snap /snap
 
 #install these flatpak images
-flatpak install -y flathub com.visualstudio.code
-flatpak install -y flathub md.obsidian.Obsidian
-flatpak install -y flathub com.jetbrains.PyCharm-Community
-flatpak install -y flathub com.jetbrains.IntelliJ-IDEA-Community
-flatpak install -y flathub com.spotify.Client
-flatpak install -y flathub org.raspberrypi.rpi-imager
-flatpak install -y flathub uk.org.greenend.chiark.sgtatham.putty
+flatpak install -y --noninteractive flathub com.visualstudio.code
+flatpak install -y --noninteractive flathub md.obsidian.Obsidian
+flatpak install -y --noninteractive flathub com.jetbrains.PyCharm-Community
+flatpak install -y --noninteractive flathub com.jetbrains.IntelliJ-IDEA-Community
+flatpak install -y --noninteractive flathub com.spotify.Client
+flatpak install -y --noninteractive flathub org.raspberrypi.rpi-imager
+flatpak install -y --noninteractive flathub uk.org.greenend.chiark.sgtatham.putty
 
 #IntelliJ Toolbox
 wget https://download.jetbrains.com/toolbox/jetbrains-toolbox-2.3.0.30876.tar.gz
@@ -33,16 +33,16 @@ wget https://dl.google.com/linux/direct/google-chrome-stable_current_x86_64.rpm
 sudo dnf localinstall google-chrome-stable_current_x86_64.rpm -y
 
 #Microsoft Fonts
-yum install curl cabextract xorg-x11-font-utils fontconfig
+yum -y install curl cabextract xorg-x11-font-utils fontconfig
 rpm -i https://downloads.sourceforge.net/project/mscorefonts2/rpms/msttcore-fonts-installer-2.6-1.noarch.rpm
 
 #Docker
 sudo dnf -y install dnf-plugins-core
 sudo dnf config-manager --add-repo https://download.docker.com/linux/fedora/docker-ce.repo
-sudo dnf install docker-ce docker-ce-cli containerd.io docker-buildx-plugin docker-compose-plugin
+sudo dnf -y install docker-ce docker-ce-cli containerd.io docker-buildx-plugin docker-compose-plugin
 sudo systemctl start docker
 
 #Block Steam
-sudo dnf install dnf-plugins-core -y
+sudo dnf -y install dnf-plugins-core
 sudo cp /etc/dnf/dnf.conf /etc/dnf/dnf.conf.backup
 sudo echo "exclude=steam" >> /etc/dnf/dnf.conf
