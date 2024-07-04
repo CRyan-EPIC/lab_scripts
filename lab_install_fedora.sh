@@ -9,8 +9,8 @@ sudo dnf install openssh-server openvpn blender krita godot3 gimp \
   git cpufetch isc-dhcp-client wget curl exfatprogs podman flatpak pip -y
 
 #snap for Fedora
-sudo dnf install snapd -y
-sudo ln -s /var/lib/snapd/snap /snap
+#sudo dnf install snapd -y
+#sudo ln -s /var/lib/snapd/snap /snap
 
 #install these flatpak images
 flatpak install flathub com.visualstudio.code
