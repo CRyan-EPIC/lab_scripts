@@ -1,7 +1,7 @@
 ## Ubuntu 24.04
 #### Open visudo -> ```sudo visudo```
 
-#### Add these to visudo
+Add these to visudo
 ```bash
 ALL ALL=(ALL) NOPASSWD: /usr/bin/apt            #apt
 ALL ALL=(ALL) NOPASSWD: /usr/bin/apt-get        #apt-get
@@ -34,6 +34,7 @@ ALL ALL=(ALL) NOPASSWD: /usr/sbin/service       #service
 ## Fedora 40
 #### Open visudo -> ```sudo visudo```
 
+Add these to visudo
 ```bash
 ALL ALL=(ALL) NOPASSWD: /usr/bin/dnf            #dnf
 ALL ALL=(ALL) NOPASSWD: /usr/bin/yum            #yum
