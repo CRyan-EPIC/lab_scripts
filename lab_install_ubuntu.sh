@@ -1,5 +1,8 @@
 #!/bin/bash
 
+#if dual-booting with Windows, this will allow the times to syncronize
+timedatectl set-local-rtc 1
+
 #install these programs
 sudo apt update
 sudo apt -o Apt::Get::Assume-Yes=true install snapd openssh-server openvpn blender krita godot3 gimp \
