@@ -42,9 +42,6 @@ sudo dnf install docker-ce docker-ce-cli containerd.io docker-buildx-plugin dock
 sudo systemctl start docker
 
 #Block Steam
-sudo dnf install dnf-plugins-core
-sudo mkdir -p /etc/dnf/protected.d/
-echo "[main]" | sudo tee /etc/dnf/protected.d/forbidden.conf
-echo "exclude=steam" | sudo tee -a /etc/dnf/protected.d/forbidden.conf
-echo "include=/etc/dnf/protected.d/*.conf" | sudo tee -a /etc/dnf/dnf.conf
-
+sudo dnf install dnf-plugins-core -y
+sudo cp /etc/dnf/dnf.conf /etc/dnf/dnf.conf.backup
+sudo echo "exclude=steam" >> /etc/dnf/dnf.conf
