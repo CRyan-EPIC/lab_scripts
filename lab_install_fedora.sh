@@ -6,9 +6,10 @@ sudo dnf install openssh-server openvpn blender krita godot3 gimp \
   gcc g++ make lolcat fortune gparted filezilla obs-studio \
   fish zsh xrdp remmina make flatpak wireshark timeshift traceroute python3 \
   nmap zip gzip bzip2 wget curl unzip ufw tree minicom git neofetch \
-  git cpufetch isc-dhcp-client wget curl exfatprogs podman flatpak snapd pip -y
+  git cpufetch isc-dhcp-client wget curl exfatprogs podman flatpak pip -y
 
-#Symbolic link between /var/lib/snapd/snap and /snap for the snap program
+#snap for Fedora
+sudo dnf install snapd -y
 sudo ln -s /var/lib/snapd/snap /snap
 
 #install these flatpak images
