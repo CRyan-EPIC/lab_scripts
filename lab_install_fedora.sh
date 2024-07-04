@@ -2,11 +2,11 @@
 
 #install these programs
 sudo dnf -y install openssh-server openvpn blender krita godot3 gimp \
-  chromium virtualbox gcc htop vim neovim nano \
-  gcc g++ make lolcat fortune gparted filezilla obs-studio \
+  chromium gcc htop vim neovim nano \
+  gcc g++ make lolcat gparted filezilla obs-studio \
   fish zsh xrdp remmina make flatpak wireshark timeshift traceroute python3 \
   nmap zip gzip bzip2 wget curl unzip ufw tree minicom git neofetch \
-  git cpufetch isc-dhcp-client wget curl exfatprogs podman flatpak pip
+  git cpufetch wget curl exfatprogs podman flatpak pip
 
 #snap for Fedora
 #sudo dnf install snapd -y
