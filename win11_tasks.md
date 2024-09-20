@@ -23,6 +23,7 @@
     - SystemTools\Local Users and Groups\Groups\Network Configuration Operators
     - Add "Everyone" to it
 - [ ] Programs to install [winstall website](https://winstall.app/apps)
+- [ ] All Memtest86+ installer to run as Admin without a password
 ```cmd
 ::Imaging
 winget install --id=Balena.Etcher  -e
