@@ -52,3 +52,29 @@ sudo systemctl start docker
 sudo dnf -y install dnf-plugins-core
 sudo cp /etc/dnf/dnf.conf /etc/dnf/dnf.conf.backup
 sudo echo "exclude=steam" >> /etc/dnf/dnf.conf
+
+
+###########Allowing the user to change the IP without a password - not tested
+sudo dnf install polkit
+
+# Define the policy directory
+POLICY_DIR="/etc/polkit-1/localauthority/50-local.d"
+
+# Create the directory if it does not exist
+sudo mkdir -p "$POLICY_DIR"
+
+# Define the policy file
+POLICY_FILE="$POLICY_DIR/99-allow-network-changes.pkla"
+
+# Create or overwrite the policy file
+sudo bash -c 'cat > "$POLICY_FILE" <<EOF
+[Allow all users to manage network]
+Identity=unix-user:*
+Action=org.freedesktop.NetworkManager.network-control
+ResultAny=yes
+ResultInactive=yes
+ResultActive=yes
+EOF'
+
+echo "Policy file created at $POLICY_FILE"
+
