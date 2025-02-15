@@ -12,6 +12,9 @@ sudo apt -o Apt::Get::Assume-Yes=true install snapd openssh-server openvpn blend
   nmap zip gzip bzip2 wget curl unzip ufw tree tigervnc-viewer minicom git neofetch \
   git rpi-imager cpufetch isc-dhcp-client wget curl exfatprogs podman flatpak -y
 
+#Install Tailscale
+curl -fsSL https://tailscale.com/install.sh | sh
+
 #Block Steam
 sudo bash -c 'cat <<EOF > /etc/apt/preferences.d/steam.pref
 Package: steam
