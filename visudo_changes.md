@@ -31,6 +31,9 @@ ALL ALL=(ALL) NOPASSWD: /usr/bin/podman         #podman
 ALL ALL=(ALL) NOPASSWD: /usr/sbin/update-grub   #update-grub
 ALL ALL=(ALL) NOPASSWD: /usr/sbin/service       #service
 ALL ALL=(ALL) NOPASSWD: /usr/bin/tailscale      #tailscale
+ALL ALL=(ALL) NOPASSWD: /sbin/ip, /usr/sbin/ip  #Change their IP
+ALL ALL=(ALL) NOPASSWD: /sbin/ifconfig          #ifconfig
+
 
 ```
 
@@ -67,4 +70,7 @@ ALL ALL=(ALL) NOPASSWD: /usr/sbin/update-grub   #udate-grub
 ALL ALL=(ALL) NOPASSWD: /usr/sbin/service       #service
 ALL ALL=(ALL) NOPASSWD: /usr/bin/tailscale      #tailscale
 ALL ALL=(ALL) NOPASSWD: /usr/bin/eject          #eject
+ALL ALL=(ALL) NOPASSWD: /sbin/ip, /usr/sbin/ip  #Change their IP
+ALL ALL=(ALL) NOPASSWD: /sbin/ifconfig          #ifconfig
+
 ```
