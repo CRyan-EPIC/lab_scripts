@@ -15,6 +15,9 @@ sudo dnf -y install openssh-server openvpn blender krita godot3 gimp \
 #sudo dnf install snapd -y
 #sudo ln -s /var/lib/snapd/snap /snap
 
+#Install Tailscale
+curl -fsSL https://tailscale.com/install.sh | sh
+
 #install these flatpak images
 flatpak install -y --noninteractive flathub com.visualstudio.code
 flatpak install -y --noninteractive flathub md.obsidian.Obsidian
