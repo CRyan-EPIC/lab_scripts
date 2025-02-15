@@ -26,9 +26,12 @@ ALL ALL=(ALL) NOPASSWD: /usr/sbin/dhclient      #dhclient
 ALL ALL=(ALL) NOPASSWD: /usr/bin/dd             #dd
 ALL ALL=(ALL) NOPASSWD: /usr/bin/mount          #mount
 ALL ALL=(ALL) NOPASSWD: /usr/bin/umount         #umount
+ALL ALL=(ALL) NOPASSWD: /usr/bin/eject          #eject
 ALL ALL=(ALL) NOPASSWD: /usr/bin/podman         #podman
-ALL ALL=(ALL) NOPASSWD: /usr/sbin/update-grub   #udate-grub
+ALL ALL=(ALL) NOPASSWD: /usr/sbin/update-grub   #update-grub
 ALL ALL=(ALL) NOPASSWD: /usr/sbin/service       #service
+ALL ALL=(ALL) NOPASSWD: /usr/bin/tailscale      #tailscale
+
 ```
 
 ## Fedora 40
@@ -62,4 +65,6 @@ ALL ALL=(ALL) NOPASSWD: /usr/bin/umount         #umount
 ALL ALL=(ALL) NOPASSWD: /usr/bin/podman         #podman
 ALL ALL=(ALL) NOPASSWD: /usr/sbin/update-grub   #udate-grub
 ALL ALL=(ALL) NOPASSWD: /usr/sbin/service       #service
+ALL ALL=(ALL) NOPASSWD: /usr/bin/tailscale      #tailscale
+ALL ALL=(ALL) NOPASSWD: /usr/bin/eject          #eject
 ```
