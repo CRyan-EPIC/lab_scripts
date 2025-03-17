@@ -11,8 +11,8 @@ sudo dnf reinstall kernel-core kernel-devel kernel-modules kernel-modules-extra
 sudo dnf install -y akmod* kmod* 
 
 # Force dependency resolution (equivalent to 'apt install -f')
-sudo dnf check
-sudo dnf distro-sync -y
+#sudo dnf check
+#sudo dnf distro-sync -y
 
 # Clean up unused packages
 sudo dnf autoremove -y
