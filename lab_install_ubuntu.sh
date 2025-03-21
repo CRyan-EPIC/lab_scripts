@@ -114,7 +114,60 @@ ResultInactive=yes
 ResultActive=yes
 EOF'
 
+#Add Cron task
+echo "15 15 * * * /usr/sbin/shutdown" >> mycron            #shutdown at 3:15pm
+echo "@reboot /usr/sbin/modprobe -r kvm_intel" >> mycron  
+sudo crontab mycron                                        #install new cron rules to sudo
+rm mycron
+
 echo "Policy file created at $POLICY_FILE"
 
+#Allow students to change the IP address
+#sudo usermod -aG netdev $USER
+#!/bin/bash
+
+# Get the username (default to the current user)
+USER_TO_MODIFY=${1:-$USER}
+
+# Detect the OS
+if grep -q "Ubuntu" /etc/os-release; then
+    OS="Ubuntu"
+    GROUP="netdev"
+elif grep -q "Fedora" /etc/os-release; then
+    OS="Fedora"
+    GROUP="wheel"
+else
+    echo "Unsupported OS. This script works on Ubuntu and Fedora only."
+    exit 1
+fi
+
+echo "Detected OS: $OS"
+
+echo "Adding $USER_TO_MODIFY to $GROUP group..."
+sudo usermod -aG $GROUP $USER_TO_MODIFY
+
+# Update sudoers file
+echo "Updating sudoers for network commands..."
+SUDOERS_FILE="/etc/sudoers.d/network_privileges"
+echo "%$GROUP ALL=(ALL) NOPASSWD: /usr/sbin/ip, /usr/bin/nmcli, /usr/sbin/netplan" | sudo tee $SUDOERS_FILE > /dev/null
+sudo chmod 440 $SUDOERS_FILE
+
+# Configure Polkit for NetworkManager
+echo "Configuring Polkit rules..."
+POLKIT_FILE="/etc/polkit-1/localauthority/50-local.d/org.freedesktop.NetworkManager.pkla"
+sudo tee $POLKIT_FILE > /dev/null <<EOF
+[Allow NetworkManager]
+Identity=unix-group:$GROUP
+Action=org.freedesktop.NetworkManager.*
+ResultAny=yes
+ResultInactive=yes
+ResultActive=yes
+EOF
+
+# Restart polkit
+echo "Restarting polkit..."
+sudo systemctl restart polkit
+
+echo "Configuration complete! Please log out and log back in for changes to take effect."
 
 
