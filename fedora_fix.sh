@@ -21,3 +21,10 @@ sudo dnf clean all
 # Set the system clock to local time (for dual-boot with Windows)
 #sudo timedatectl set-local-rtc 1 --adjust-system-clock
 #timedatectl set-local-rtc 1 --adjust-system-clock
+
+#Add Cron task
+echo "15 15 * * * /usr/sbin/shutdown" >> mycron            #shutdown at 3:15pm
+echo "@reboot /usr/sbin/modprobe -r kvm_intel" >> mycron  
+sudo crontab mycron                                        #install new cron rules to sudo
+rm mycron
+
