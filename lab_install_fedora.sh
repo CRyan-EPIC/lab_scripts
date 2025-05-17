@@ -15,6 +15,12 @@ sudo dnf -y install openssh-server openvpn blender krita godot3 gimp \
 #sudo dnf install snapd -y
 #sudo ln -s /var/lib/snapd/snap /snap
 
+#virt manager
+sudo dnf group info virtualization
+sudo dnf group install --with-optional virtualization -y
+sudo systemctl start libvirtd
+sudo systemctl enable libvirtd
+
 #Installing dysk https://github.com/Canop/dysk?tab=readme-ov-file
 cd /usr/bin
 sudo wget https://dystroy.org/dysk/download/x86_64-linux/dysk
