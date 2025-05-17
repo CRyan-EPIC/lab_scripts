@@ -15,6 +15,19 @@ sudo dnf -y install openssh-server openvpn blender krita godot3 gimp \
 #sudo dnf install snapd -y
 #sudo ln -s /var/lib/snapd/snap /snap
 
+#Installing dysk https://github.com/Canop/dysk?tab=readme-ov-file
+cd /usr/bin
+sudo wget https://dystroy.org/dysk/download/x86_64-linux/dysk
+chmod 755 ./dysk
+cd ~
+
+#Install webcamize
+mkdir .custom_programs
+cd .custom_programs
+git clone https://github.com/cowtoolz/webcamize && cd webcamize
+sudo ln -s "$PWD/webcamize" /usr/local/bin/
+cd ~
+
 #Install Tailscale
 curl -fsSL https://tailscale.com/install.sh | sh
 
