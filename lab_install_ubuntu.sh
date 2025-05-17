@@ -22,6 +22,13 @@ cd ~
 #Install Tailscale
 curl -fsSL https://tailscale.com/install.sh | sh
 
+#Install webcamize
+mkdir .custom_programs
+cd .custom_programs
+git clone https://github.com/cowtoolz/webcamize && cd webcamize
+sudo ln -s "$PWD/webcamize" /usr/local/bin/
+cd ~
+
 #Block Steam
 sudo bash -c 'cat <<EOF > /etc/apt/preferences.d/steam.pref
 Package: steam
