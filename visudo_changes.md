@@ -77,5 +77,6 @@ ALL ALL=(ALL) NOPASSWD: /sbin/ip, /usr/sbin/ip  #Change their IP
 ALL ALL=(ALL) NOPASSWD: /sbin/ifconfig          #ifconfig
 ALL ALL=(ALL) NOPASSWD: /usr/sbin/firewalld     #firewalld
 ALL ALL=(ALL) NOPASSWD: /usr/bin/firewall-cmd   #firewal-cmd
+ALL ALL=(ALL) NOPASSWD: /usr/bin/virt-manager  #virt-manager
 
 ```
