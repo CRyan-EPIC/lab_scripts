@@ -21,7 +21,7 @@ sudo wget https://dystroy.org/dysk/download/x86_64-linux/dysk
 chmod 755 ./dysk
 cd ~
 
-#Install webcamize
+#Install webcamize https://github.com/cowtoolz/webcamize?tab=readme-ov-file#installation
 mkdir .custom_programs
 cd .custom_programs
 git clone https://github.com/cowtoolz/webcamize && cd webcamize
