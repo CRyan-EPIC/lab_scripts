@@ -22,7 +22,7 @@ cd ~
 #Install Tailscale
 curl -fsSL https://tailscale.com/install.sh | sh
 
-#Install webcamize
+#Install webcamize https://github.com/cowtoolz/webcamize?tab=readme-ov-file#installation
 mkdir .custom_programs
 cd .custom_programs
 git clone https://github.com/cowtoolz/webcamize && cd webcamize
