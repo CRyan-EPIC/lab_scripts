@@ -12,6 +12,13 @@ sudo apt -o Apt::Get::Assume-Yes=true install snapd openssh-server openvpn blend
   nmap zip gzip bzip2 wget curl unzip ufw tree tigervnc-viewer minicom git neofetch \
   git rpi-imager cpufetch isc-dhcp-client wget curl exfatprogs podman flatpak -y
 
+
+#Installing dysk https://github.com/Canop/dysk?tab=readme-ov-file
+cd /usr/bin
+sudo wget https://dystroy.org/dysk/download/x86_64-linux/dysk
+chmod 755 ./dysk
+cd ~
+
 #Install Tailscale
 curl -fsSL https://tailscale.com/install.sh | sh
 
