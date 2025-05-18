@@ -35,7 +35,6 @@ cd ~/.posh_themes
 wget https://raw.githubusercontent.com/JanDeDobbeleer/oh-my-posh/main/themes/powerline.omp.json
 
 # Add init line to .bashrc if not already present
-INIT_LINE='eval "$(oh-my-posh init bash --config ~/.posh_themes/powerline.omp.json)"'
-grep -qxF "$INIT_LINE" ~/.bashrc || echo "$INIT_LINE" >> ~/.bashrc
-
-echo "✅ Setup complete. Restart your terminal or run: $INIT_LINE"
+echo 'export PATH="$HOME/.local/bin:$PATH"' >> ~/.bashrc
+echo 'eval "$(oh-my-posh init bash --config ~/.posh_themes/powerline.omp.json)"' >> ~/.bashrc
+source ~/.bashrc
