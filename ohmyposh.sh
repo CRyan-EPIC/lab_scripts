@@ -14,14 +14,28 @@ else
     exit 1
 fi
 
+# Add ~/.local/bin to PATH
+export PATH="$HOME/.local/bin:$PATH"
+
 # Install OhmyPosh
 curl -s https://ohmyposh.dev/install.sh | bash -s
-oh-my-posh font install
-oh-my-posh get shelloh-my-posh get shell
 
-# Download the powerline theme
-cd ~
-mkdir .posh_themes
-cd .posh_themes
-wget https://raw.githubusercontent.com/JanDeDobbeleer/oh-my-posh/refs/heads/main/themes/powerline.omp.json
-echo 'eval "$(oh-my-posh init bash --config ~/.posh_themes/powerline.omp.json)"' >> ~/.bashrc
+# Ensure installation worked
+if ! command -v oh-my-posh >/dev/null 2>&1; then
+    echo "❌ Oh My Posh not found after installation."
+    exit 1
+fi
+
+# Install fonts (optional)
+oh-my-posh font install
+
+# Download powerline theme
+mkdir -p ~/.posh_themes
+cd ~/.posh_themes
+wget https://raw.githubusercontent.com/JanDeDobbeleer/oh-my-posh/main/themes/powerline.omp.json
+
+# Add init line to .bashrc if not already present
+INIT_LINE='eval "$(oh-my-posh init bash --config ~/.posh_themes/powerline.omp.json)"'
+grep -qxF "$INIT_LINE" ~/.bashrc || echo "$INIT_LINE" >> ~/.bashrc
+
+echo "✅ Setup complete. Restart your terminal or run: $INIT_LINE"
