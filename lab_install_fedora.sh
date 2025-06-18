@@ -15,6 +15,22 @@ sudo dnf -y install openssh-server openvpn blender krita godot3 gimp \
 #sudo dnf install snapd -y
 #sudo ln -s /var/lib/snapd/snap /snap
 
+
+### Allow users to change their IP address in Gnome 42 (this may not work in the future)
+sudo mkdir -p /etc/polkit-1/localauthority/50-local.d
+
+sudo tee /etc/polkit-1/localauthority/50-local.d/99-allow-all-networkmanager.pkla > /dev/null <<EOF
+[Allow all users to manage network]
+Identity=unix-user:*
+Action=org.freedesktop.NetworkManager.*
+ResultAny=yes
+ResultInactive=yes
+ResultActive=yes
+EOF
+
+sudo systemctl restart polkit
+
+
 #virt manager
 sudo dnf group info virtualization
 sudo dnf group install --with-optional virtualization -y
