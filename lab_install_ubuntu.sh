@@ -16,7 +16,7 @@ sudo apt -o Apt::Get::Assume-Yes=true install snapd openssh-server openvpn blend
 #Installing dysk https://github.com/Canop/dysk?tab=readme-ov-file
 cd /usr/bin
 sudo wget https://dystroy.org/dysk/download/x86_64-linux/dysk
-chmod 755 ./dysk
+sudo chmod 755 ./dysk
 cd ~
 
 #Install Tailscale
