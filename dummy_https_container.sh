@@ -39,12 +39,12 @@ RUN echo '<VirtualHost *:80>\n\
     Redirect permanent / https://localhost/\n\
 </VirtualHost>' > /etc/apache2/sites-available/000-default.conf
 
-# Add custom index.html
+# Add custom index.html with typo fixed
 RUN echo '<!DOCTYPE html> \
 <html> \
 <body> \
 <img src="https://blog.smu.edu/itconnect/files/2018/08/Tux-Banner-1024x400-2g55u6j.png" width=50%/> \
-<h2>HTTPS is better than HTTP, but with proxy’s like Burpsuite you can still grab passwords!</h2> \
+<h2>HTTPS is better than HTTP, but with proxies like Burpsuite you can still grab passwords!</h2> \
 <form action="/action_page.php" method="post"> \
   <label for="name">Name:</label><br> \
   <input type="text" id="name" name="name" value="Tux"><br> \
