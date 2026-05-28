@@ -185,3 +185,30 @@ sudo systemctl restart polkit
 echo "Configuration complete! Please log out and log back in for changes to take effect."
 
 
+#####################################################
+#Installing Chrome
+#!/usr/bin/env bash
+
+# Exit immediately if a command exits with a non-zero status
+set -e
+
+echo "=== Starting Google Chrome Installation ==="
+
+# 1. Download and install the official Google GPG key
+echo "-> Downloading Google GPG key..."
+wget -q -O - https://google.com | sudo tee /etc/apt/trusted.gpg.d/google.asc >/dev/null
+
+# 2. Add the Google Chrome repository to apt sources
+echo "-> Adding Google Chrome repository..."
+echo "deb [arch=amd64 signed-by=/etc/apt/trusted.gpg.d/google.asc] http://google.com stable main" | sudo tee /etc/apt/sources.list.d/google-chrome.list
+
+# 3. Update repository lists
+echo "-> Updating apt package lists..."
+sudo apt update
+
+# 4. Install Google Chrome
+echo "-> Installing Google Chrome..."
+sudo apt install -y google-chrome-stable
+
+echo "=== Google Chrome installation complete! ==="
+#####################################################
