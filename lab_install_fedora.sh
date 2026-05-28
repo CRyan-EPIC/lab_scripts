@@ -88,4 +88,25 @@ sudo dnf -y install dnf-plugins-core
 sudo cp /etc/dnf/dnf.conf /etc/dnf/dnf.conf.backup
 sudo echo "exclude=steam" >> /etc/dnf/dnf.conf
 
+#!/usr/bin/env bash
+
+# Exit immediately if a command exits with a non-zero status
+set -e
+
+echo "=== Starting Google Chrome Installation for Fedora ==="
+
+# 1. Install the Fedora third-party repositories configuration if missing
+echo "-> Enabling Fedora third-party repositories..."
+sudo dnf install -y fedora-workstation-repositories
+
+# 2. Enable the official Google Chrome RPM repository
+echo "-> Enabling Google Chrome repository..."
+sudo dnf config-manager --set-enabled google-chrome
+
+# 3. Install Google Chrome
+echo "-> Installing Google Chrome..."
+sudo dnf install -y google-chrome-stable
+
+echo "=== Google Chrome installation complete! ==="
+
 
